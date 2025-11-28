@@ -1,0 +1,39 @@
+/* .bd-placeholder-img 用于设置占位符图像的样式 */
+.bd-placeholder-img {
+  /* 设置字体大小 */
+  font-size: 1.125rem;
+  /* 文本对齐方式设为居中 */
+  text-anchor: middle;
+  /* 禁用文本选择 */
+  user-select: none;
+}
+
+/* 当屏幕宽度大于等于768px时，应用以下样式 */
+@media (min-width: 768px) {
+  /* .bd-placeholder-img-lg 用于设置大尺寸占位符图像的样式 */
+  .bd-placeholder-img-lg {
+    /* 设置字体大小 */
+    font-size: 3.5rem;
+  }
+}
+
+.btn-bd-primary {
+  /*  设置按钮背景颜色*/
+  --bs-btn-bg: #712cf9;
+  /*  设置按钮边框颜色*/
+  --bs-btn-border-color: #712cf9;
+  /*  按钮文本颜色*/
+  --bs-btn-color: #fff;
+}
+
+/* .bd-mode-toggle 用于固定定位一个元素 */
+.bd-mode-toggle {
+  /* 设置元素为固定定位 */
+  position: fixed;
+  /* 距离底部1rem */
+  bottom: 1rem;
+  /* 距离右侧1rem */
+  right: 1rem;
+  /* 设置堆叠顺序 */
+  z-index: 1500;
+}

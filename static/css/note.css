@@ -1,0 +1,65 @@
+body {
+  background-color: #f8f9fa;
+  padding-top: 60px;
+}
+/*笔记框样式*/
+.note-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+pre, code {
+  background-color: #e9ecef;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+/*返回按钮*/
+.btn-back {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1050;
+}
+/*大纲按钮*/
+.btn-outline-secondary-outline {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1050;
+}
+
+/*评论区样式*/
+.comment-section {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+}
+/*点赞，收藏的评论*/
+.comment-actions button {
+  margin-right: 0.5rem;
+}
+/*用户评论样式*/
+.comment {
+  border-top: 1px solid #dee2e6;
+  padding: 0.5rem 0;
+}
+
+/* 大纲高亮样式 */
+#outlineList a.active {
+  font-weight: bold;
+  color: #712cf9;
+}
+/*大纲列表样式*/
+#outlineList li {
+    /* 设置底部外边距 */
+  margin-bottom: 0.25rem;
+}
