@@ -4,28 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e20626a2-e4c2-4060-a35e-7161b5c74f0f" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/dependencies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/notes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notes_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/note.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/html/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/html/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/html/note.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image/login_user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/note.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/db_contect_test.py" afterDir="false" />
+    <list default="true" id="e20626a2-e4c2-4060-a35e-7161b5c74f0f" name="更改" comment="完成第一次查询">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/notes_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/note_templates.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyWeb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notes_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/notes_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +27,9 @@
       <list>
         <option value="FastAPI main" />
         <option value="FastAPI test_main" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -84,6 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
@@ -122,7 +112,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="FastAPI.MyWeb">
     <configuration name="test_main | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" executionIdentifier="#1" runType="运行单个请求">
       <method v="2" />
     </configuration>
@@ -161,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP 请求.test_main | #1" />
         <item itemvalue="HTTP 请求.test_main | #2" />
+        <item itemvalue="HTTP 请求.test_main | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -184,8 +174,19 @@
       <workItem from="1764228021665" duration="8554000" />
       <workItem from="1764254051302" duration="9011000" />
       <workItem from="1764295843086" duration="8881000" />
-      <workItem from="1764312778781" duration="8336000" />
+      <workItem from="1764312778781" duration="8690000" />
+      <workItem from="1764342122134" duration="2776000" />
+      <workItem from="1764381479730" duration="7689000" />
     </task>
+    <task id="LOCAL-00001" summary="完成第一次查询">
+      <option name="closed" value="true" />
+      <created>1764321385229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764321385229</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,20 +203,13 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完成第一次查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第一次查询" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MyWeb$db_contect_test.coverage" NAME="db_contect_test 覆盖结果" MODIFIED="1764321112507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/MyWeb$MyWeb.coverage" NAME="MyWeb 覆盖结果" MODIFIED="1764301655194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MyWeb$db_contect_test.coverage" NAME="db_contect_test 覆盖结果" MODIFIED="1764342415743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MyWeb$MyWeb.coverage" NAME="MyWeb 覆盖结果" MODIFIED="1764392771621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/MyWeb$notes_service.coverage" NAME="notes_service 覆盖结果" MODIFIED="1764319565774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
     <SUITE FILE_PATH="coverage/MyWeb$dependencies.coverage" NAME="dependencies 覆盖结果" MODIFIED="1764315128092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
