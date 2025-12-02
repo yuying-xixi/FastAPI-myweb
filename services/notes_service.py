@@ -48,5 +48,6 @@ class NoteService:
         return True
 
     # 获取笔记列表（分页示例）
-    def list(self, offset: int = 0, limit: int = 20):
+    def get_latest_note_list(self, offset: int = 0, limit: int = 20):
         return self.db.query(Note).order_by(Note.note_create_time.desc()).offset(offset).limit(limit).all()
+
