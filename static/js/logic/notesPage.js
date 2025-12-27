@@ -1,5 +1,12 @@
 import {fetchNotesList} from "/static/js/api/notesApi.js";
 
+// 渲染
+window.addEventListener("DOMContentLoaded", () => {
+    loadNotes();
+    manageNotes();
+});
+
+
 // 格式化时间
 function formatDate(isoString) {
     const date = new Date(isoString);
@@ -13,6 +20,7 @@ function formatDate(isoString) {
 export function loadNotes() {
     fetchNotesList().then(notes => {
         const container = document.getElementById("notesList");
+        if (!container) return;
         container.innerHTML = "";
         notes.forEach(note => {
             const card = `
@@ -20,8 +28,8 @@ export function loadNotes() {
                 <div class="card-body">
                     <h5 class="card-title">${note.note_title}</h5>
                     <p class="card-text text-muted"><small>${formatDate(note.note_update_time)}</small></p>
-                    <p class="card-text">这篇笔记总结了 JavaScript 的变量、函数和事件处理的基础知识。</p>
-                <a href="#" class="btn btn-primary btn-sm" onclick="goDetail(${note.note_id})">查看详情</a>
+                    <p class="card-text">暂无笔记简介描述</p>
+                     <a href="/static/html/note_api.html?note_id=${note.note_id}" class="btn btn-primary btn-sm">查看详情</a>
                 </div>
             </div>
             `;
@@ -30,14 +38,12 @@ export function loadNotes() {
     });
 }
 
-export function goDetail(id) {
-    window.location.href = `/static/html/note.html?note_id=${id}`;
-}
 
 // 渲染个人笔记管理
-export function manegeNotes() {
+export function manageNotes() {
     fetchNotesList().then(notes => {
             const notesTable = document.getElementById("notesTable");
+            if (!notesTable) return;
             notesTable.innerHTML = "";
             notes.forEach(note => {
                 const tr = document.createElement("tr");
@@ -61,8 +67,3 @@ export function manegeNotes() {
 }
 
 
-// 渲染
-window.addEventListener("DOMContentLoaded", () => {
-    loadNotes();
-    manegeNotes();
-});

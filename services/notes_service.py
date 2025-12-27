@@ -51,3 +51,4 @@ class NoteService:
     def get_latest_note_list(self, offset: int = 0, limit: int = 20):
         return self.db.query(Note).order_by(Note.note_create_time.desc()).offset(offset).limit(limit).all()
 
+

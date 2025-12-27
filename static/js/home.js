@@ -12,6 +12,7 @@
         }
     };
 
+    // 高亮导航栏
     const dropdownItems = document.querySelectorAll('[data-bs-theme-value]');
     dropdownItems.forEach(item => {
         item.addEventListener('click', () => {
