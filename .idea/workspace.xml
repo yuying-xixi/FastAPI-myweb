@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e20626a2-e4c2-4060-a35e-7161b5c74f0f" name="更改" comment="能将数据库的信息获取并渲染到前端">
-      <change afterPath="$PROJECT_DIR$/static/html/note_api.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/logic/noteDetail.js" afterDir="false" />
+    <list default="true" id="e20626a2-e4c2-4060-a35e-7161b5c74f0f" name="更改" comment="笔记详细页成功渲染">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/notes_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/routers/notes_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notes_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/notes_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/note.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/note.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/html/home_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/html/home_api.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/api/notesApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/api/notesApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/logic/notesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/logic/notesPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/note.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/note.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +192,7 @@
       <workItem from="1764485467883" duration="10315000" />
       <workItem from="1764552087779" duration="31000" />
       <workItem from="1764662993381" duration="3848000" />
-      <workItem from="1766809834244" duration="11854000" />
+      <workItem from="1766809834244" duration="12889000" />
     </task>
     <task id="LOCAL-00001" summary="完成第一次查询">
       <option name="closed" value="true" />
@@ -225,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764411215344</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="笔记详细页成功渲染">
+      <option name="closed" value="true" />
+      <created>1766821808257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766821808257</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,12 +246,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成第一次查询" />
     <MESSAGE value="能将数据库的信息获取并渲染到前端" />
-    <option name="LAST_COMMIT_MESSAGE" value="能将数据库的信息获取并渲染到前端" />
+    <MESSAGE value="笔记详细页成功渲染" />
+    <option name="LAST_COMMIT_MESSAGE" value="笔记详细页成功渲染" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyWeb$db_contect_test.coverage" NAME="db_contect_test 覆盖结果" MODIFIED="1764406897825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/MyWeb$notes_services_test.coverage" NAME="notes_services_test 覆盖结果" MODIFIED="1764490146137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/MyWeb$MyWeb.coverage" NAME="MyWeb 覆盖结果" MODIFIED="1766821367242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MyWeb$MyWeb.coverage" NAME="MyWeb 覆盖结果" MODIFIED="1766822477236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/MyWeb$notes_service.coverage" NAME="notes_service 覆盖结果" MODIFIED="1764319565774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
     <SUITE FILE_PATH="coverage/MyWeb$dependencies.coverage" NAME="dependencies 覆盖结果" MODIFIED="1764315128092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
